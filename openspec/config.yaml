@@ -1,12 +1,5 @@
 schema: spec-driven
 
-# Claude generated
-context: |
-  Engine: Godot 4.x, GDScript (static typing preferred)
-  Scenes (.tscn) and resources (.tres) are text; edit via the editor when possible
-  Conventions: snake_case files/vars, PascalCase node/class names, signals up / calls down
-  Don't touch the .godot/ folder
-
 # Project context (optional)
 # Add only constraints that should guide OpenSpec artifacts and workflows.
 # Include constraints an agent cannot infer by reading the code.
