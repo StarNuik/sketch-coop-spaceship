@@ -21,3 +21,10 @@ config/icon="res://icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+
+[input]
+
+move_up={"deadzone": 0.5, "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"index":-1,"key":87,"pressed":true,"echo":false,"mod_shift":false,"mod_ctrl":false,"mod_alt":false,"mod_meta":false,"modifier":false,"scancode":26,"unicode_char":0)]}
+move_down={"deadzone": 0.5, "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"index":-1,"key":83,"pressed":true,"echo":false,"mod_shift":false,"mod_ctrl":false,"mod_alt":false,"mod_meta":false,"modifier":false,"scancode":22,"unicode_char":0)]}
+move_left={"deadzone": 0.5, "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"index":-1,"key":65,"pressed":true,"echo":false,"mod_shift":false,"mod_ctrl":false,"mod_alt":false,"mod_meta":false,"modifier":false,"scancode":4,"unicode_char":0)]}
+move_right={"deadzone": 0.5, "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"index":-1,"key":68,"pressed":true,"echo":false,"mod_shift":false,"mod_ctrl":false,"mod_alt":false,"mod_meta":false,"modifier":false,"scancode":7,"unicode_char":0)]}
