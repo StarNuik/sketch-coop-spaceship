@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dyse4lodi3ixg"]
+
+[ext_resource type="SpriteFrames" uid="uid://cn1vge2aibyuk" path="res://pilot/new_sprite_frames.tres" id="1_4d6hr"]
+[ext_resource type="Script" uid="uid://c1nsvo51d0cd2" path="res://pilot/pilot.gd" id="1_sbw0w"]
+
+[node name="Pilot" type="CharacterBody2D" unique_id=1521212368]
+script = ExtResource("1_sbw0w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=446310413]
+texture_filter = 1
+sprite_frames = ExtResource("1_4d6hr")
+animation = &"idle"
+frame_progress = 0.2819589
