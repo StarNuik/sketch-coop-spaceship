@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://cd5ye3f0jb7n4"]
 
+[ext_resource type="PackedScene" uid="uid://dyse4lodi3ixg" path="res://pilot/pilot.tscn" id="1_pq8q7"]
+
 [node name="root" type="Node2D" unique_id=1794843331]
+
+[node name="Pilot" parent="." unique_id=1521212368 instance=ExtResource("1_pq8q7")]

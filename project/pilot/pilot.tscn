@@ -5,6 +5,7 @@
 
 [node name="Pilot" type="CharacterBody2D" unique_id=1521212368]
 script = ExtResource("1_sbw0w")
+speed = 100.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=446310413]
 texture_filter = 1
