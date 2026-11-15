@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cjc1k227pmgyw"]
+
+[ext_resource type="Texture2D" uid="uid://bwfg2eoqm3r78" path="res://light/light-tex-linear.png" id="1_nhedh"]
+
+[node name="HardLight" type="PointLight2D" unique_id=1973641928]
+shadow_enabled = true
+texture = ExtResource("1_nhedh")

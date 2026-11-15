@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c3xek4p5ldf7u"]
+
+[ext_resource type="Texture2D" uid="uid://uv1bnhnbnayu" path="res://light/light-tex-hard.png" id="1_x8d0n"]
+
+[node name="SoftLight" type="PointLight2D" unique_id=1844818569]
+shadow_enabled = true
+texture = ExtResource("1_x8d0n")

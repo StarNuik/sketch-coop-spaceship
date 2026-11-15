@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dfqfpabfb3ktb"]
 
-[ext_resource type="TileSet" uid="uid://dtlr51dx61d21" path="res://interior/tiles/new_tile_set.tres" id="1_37fr2"]
-[ext_resource type="Texture2D" uid="uid://bddiu8ap3socm" path="res://icon.svg" id="2_f1cuv"]
+[ext_resource type="TileSet" uid="uid://dtlr51dx61d21" path="res://interior/tiles/32px.tres" id="1_37fr2"]
+[ext_resource type="PackedScene" uid="uid://c3xek4p5ldf7u" path="res://light/soft_light.tscn" id="2_2w0g5"]
 
 [node name="Interior" type="Node2D" unique_id=91812930]
 
@@ -13,15 +13,55 @@ tile_set = ExtResource("1_37fr2")
 tile_map_data = PackedByteArray("AAD+//T/AAAJAAIAAAD///T/AAAJAAIAAAAAAPT/AAAJAAIAAAABAPT/AAAJAAIAAAD+//f/AAAJAAIAAAD///f/AAAJAAIAAAAAAPf/AAAJAAIAAAABAPf/AAAJAAIAAAD9//j/AAAJAAIAAGACAPj/AAAJAAIAAFD9//T/AAAJAAIAAAACAPT/AAAJAAIAAAD6//b/AAAJAAIAAAD7//b/AAAJAAIAAAD8//b/AAAJAAIAAAADAPb/AAAJAAIAAAAEAPb/AAAJAAIAAAAFAPb/AAAJAAIAAAD5//j/AAAJAAIAAGD5//n/AAAJAAIAAGD5//r/AAAJAAIAAGD5//v/AAAJAAIAAGAGAPj/AAAJAAIAAFAGAPn/AAAJAAIAAFAGAPr/AAAJAAIAAFAGAPv/AAAJAAIAAFABAPv/AAAJAAIAADAAAPv/AAAJAAIAADD///v/AAAJAAIAADD+//v/AAAJAAIAADD+//j/AAAGAAEAADD///j/AAAGAAEAADAAAPj/AAAGAAEAADABAPj/AAAGAAEAADD6//v/AAAHAAEAAFD6//r/AAAHAAEAAFD6//n/AAAHAAEAAFD6//j/AAAHAAEAAFAFAPj/AAAHAAEAAGAFAPn/AAAHAAEAAGAFAPr/AAAHAAEAAGAFAPv/AAAHAAEAAGD6//f/AAAHAAEAADD7//f/AAAHAAEAADD8//f/AAAHAAEAADADAPf/AAAHAAEAADAEAPf/AAAHAAEAADAFAPf/AAAHAAEAADD9//X/AAAHAAEAADD+//X/AAAHAAEAADD///X/AAAHAAEAADAAAPX/AAAHAAEAADABAPX/AAAHAAEAADACAPX/AAAHAAEAADD+//r/AAAHAAEAAAD///r/AAAHAAEAAAAAAPr/AAAHAAEAAAABAPr/AAAHAAEAAAA=")
 tile_set = ExtResource("1_37fr2")
 
-[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1513484383]
-position = Vector2(1, -229)
-shadow_enabled = true
-texture = ExtResource("2_f1cuv")
-texture_scale = 4.27
+[node name="SoftLight2" parent="." unique_id=1844818569 instance=ExtResource("2_2w0g5")]
+position = Vector2(126, -48)
+color = Color(1, 0.39607844, 0, 1)
 
-[node name="PointLight2D4" type="PointLight2D" parent="." unique_id=586877604]
-position = Vector2(1, -50)
-energy = 0.7
-shadow_enabled = true
-texture = ExtResource("2_f1cuv")
-texture_scale = 4.27
+[node name="SoftLight3" parent="." unique_id=1431904329 instance=ExtResource("2_2w0g5")]
+position = Vector2(-124, -49)
+color = Color(1, 0.40000004, 0, 1)
+
+[node name="SoftLight" parent="." unique_id=1574303159 instance=ExtResource("2_2w0g5")]
+position = Vector2(0, -249)
+scale = Vector2(1.5, 1.5)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight4" parent="." unique_id=190062425 instance=ExtResource("2_2w0g5")]
+position = Vector2(-111, -128)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight5" parent="." unique_id=2058657933 instance=ExtResource("2_2w0g5")]
+position = Vector2(-187, -191)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight6" parent="." unique_id=1084949974 instance=ExtResource("2_2w0g5")]
+position = Vector2(-143, -286)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight7" parent="." unique_id=2057885303 instance=ExtResource("2_2w0g5")]
+position = Vector2(0, -144)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight8" parent="." unique_id=369617094 instance=ExtResource("2_2w0g5")]
+position = Vector2(112, -128)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight9" parent="." unique_id=1878219567 instance=ExtResource("2_2w0g5")]
+position = Vector2(203, -193)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight10" parent="." unique_id=1408428028 instance=ExtResource("2_2w0g5")]
+position = Vector2(145, -288)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight11" parent="." unique_id=1953597028 instance=ExtResource("2_2w0g5")]
+position = Vector2(-49, -352)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight12" parent="." unique_id=806275522 instance=ExtResource("2_2w0g5")]
+position = Vector2(49, -351)
+color = Color(1, 0.83566666, 0.42000002, 1)
+
+[node name="SoftLight13" parent="." unique_id=2109415391 instance=ExtResource("2_2w0g5")]
+position = Vector2(0, -47)
+color = Color(1, 0.83566666, 0.42000002, 1)

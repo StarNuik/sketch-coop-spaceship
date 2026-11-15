@@ -1,13 +1,32 @@
 [gd_scene format=3 uid="uid://cd5ye3f0jb7n4"]
 
 [ext_resource type="PackedScene" uid="uid://dyse4lodi3ixg" path="res://pilot/pilot.tscn" id="1_pq8q7"]
-[ext_resource type="PackedScene" uid="uid://dfqfpabfb3ktb" path="res://interior/interior.tscn" id="1_pyidc"]
 
-[node name="root" type="Node2D" unique_id=1794843331]
+[node name="root" type="Node" unique_id=1883079339]
 
-[node name="Interior" parent="." unique_id=91812930 instance=ExtResource("1_pyidc")]
+[node name="Control" type="Control" parent="." unique_id=1942426052]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Pilot" parent="." unique_id=1521212368 instance=ExtResource("1_pq8q7")]
+[node name="CenterContainer" type="CenterContainer" parent="Control" unique_id=1065829510]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1349370806]
-color = Color(0.15127608, 0.15127608, 0.15127608, 1)
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Control/CenterContainer" unique_id=1891588710]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="Control/CenterContainer/SubViewportContainer" unique_id=1658003732]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Node2D" type="Node2D" parent="Control/CenterContainer/SubViewportContainer/SubViewport" unique_id=2053393757]
+
+[node name="Pilot" parent="Control/CenterContainer/SubViewportContainer/SubViewport/Node2D" unique_id=817408437 instance=ExtResource("1_pq8q7")]
