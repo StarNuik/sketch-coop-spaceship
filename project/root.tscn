@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cd5ye3f0jb7n4"]
 
 [ext_resource type="Theme" uid="uid://y2q0yys4cvl5" path="res://ui-base/kenney_theme.tres" id="1_pq8q7"]
+[ext_resource type="PackedScene" uid="uid://dyse4lodi3ixg" path="res://pilot/pilot.tscn" id="2_pyidc"]
 
 [node name="root" type="Control" unique_id=2073068365]
 layout_mode = 3
@@ -35,82 +36,95 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer" unique_id=1887673608]
 layout_mode = 2
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer" unique_id=1664416287]
-layout_mode = 2
-
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer" unique_id=137559919]
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer" unique_id=1620525796]
 layout_mode = 2
 theme_type_variation = &"Tier2PanelContainer"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer" unique_id=773876352]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer2" unique_id=386092011]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=84663162]
+[node name="SubViewport" type="SubViewport" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer2/SubViewportContainer" unique_id=326009858]
+
+[node name="Node2D" type="Node2D" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer2/SubViewportContainer/SubViewport" unique_id=835616290]
+
+[node name="Pilot" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer2/SubViewportContainer/SubViewport/Node2D" unique_id=1521212368 instance=ExtResource("2_pyidc")]
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer" unique_id=1335461086]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer" unique_id=137559919]
+layout_mode = 2
+theme_type_variation = &"Tier2PanelContainer"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer" unique_id=773876352]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2" unique_id=84663162]
 layout_mode = 2
 alignment = 1
 
-[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1392303660]
+[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1392303660]
 layout_mode = 2
 text = "Heading"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=2118256416]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=2118256416]
 layout_mode = 2
 alignment = 1
 
-[node name="HScrollBar" type="HScrollBar" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=1100768831]
+[node name="HScrollBar" type="HScrollBar" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=1100768831]
 custom_minimum_size = Vector2(110, 0)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1524501409]
+[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1524501409]
 layout_mode = 2
 text = "90°"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=5092275]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2" unique_id=5092275]
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=688065536]
+[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=688065536]
 layout_mode = 2
 text = "Thrust"
 
-[node name="HSlider" type="HSlider" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=1370951425]
+[node name="HSlider" type="HSlider" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=1370951425]
 custom_minimum_size = Vector2(110, 0)
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=1570557742]
+[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=1570557742]
 layout_mode = 2
 text = "100%"
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1707801723]
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2" unique_id=1707801723]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=1536536277]
+[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=1536536277]
 layout_mode = 2
 text = "Duration"
 
-[node name="HSlider" type="HSlider" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=651648647]
+[node name="HSlider" type="HSlider" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=651648647]
 custom_minimum_size = Vector2(110, 0)
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=615703650]
+[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=615703650]
 layout_mode = 2
 text = "15°"
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1134270397]
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2" unique_id=1134270397]
 layout_mode = 2
 alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1177902682]
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2" unique_id=1177902682]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/CenterContainer" unique_id=201067581]
+[node name="Button" type="Button" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/CenterContainer" unique_id=201067581]
 layout_mode = 2
 text = "Add Point"
 
-[node name="CenterContainer2" type="CenterContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1592425494]
+[node name="CenterContainer2" type="CenterContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2" unique_id=1592425494]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/CenterContainer2" unique_id=344467536]
+[node name="Button2" type="Button" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/CenterContainer/PanelContainer/VBoxContainer2/CenterContainer2" unique_id=344467536]
 layout_mode = 2
 theme_type_variation = &"GreenButton"
 text = "Queue Path"
@@ -121,6 +135,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer" unique_id=550906747]
+visible = false
 layout_mode = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/CenterContainer" unique_id=1332004595]

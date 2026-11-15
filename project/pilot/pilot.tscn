@@ -18,8 +18,6 @@ sprite_frames = ExtResource("1_4d6hr")
 animation = &"idle"
 frame_progress = 0.2819589
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=363273430]
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1094329706]
 shape = SubResource("CapsuleShape2D_wbm84")
 

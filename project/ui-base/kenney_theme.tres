@@ -13,6 +13,13 @@
 [ext_resource type="Texture2D" uid="uid://d3dw146ssjgm0" path="res://ui-base/kenney-ui/Grey/Default/button_square_depth_flat.png" id="8_6oljx"]
 [ext_resource type="Texture2D" uid="uid://d3aiqedhkc8fb" path="res://ui-base/kenney-ui/Green/Default/button_square_flat.png" id="8_eqgxj"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wbm84"]
+texture = ExtResource("4_7ucgj")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aoqm3"]
 texture = ExtResource("6_8koh6")
 texture_margin_left = 6.0
@@ -27,7 +34,7 @@ texture_margin_top = 6.0
 texture_margin_right = 6.0
 texture_margin_bottom = 6.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wbm84"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h3wv7"]
 texture = ExtResource("8_6oljx")
 texture_margin_left = 6.0
 texture_margin_top = 6.0
@@ -107,12 +114,14 @@ texture_margin_bottom = 13.0
 [resource]
 default_font = ExtResource("1_l8g84")
 default_font_size = 16
+AltTier2PanelContainer/base_type = &"PanelContainer"
+AltTier2PanelContainer/styles/panel = SubResource("StyleBoxTexture_wbm84")
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(0, 0, 0, 1)
 Button/styles/hover = SubResource("StyleBoxTexture_aoqm3")
 Button/styles/hover_pressed = SubResource("StyleBoxTexture_pokdo")
-Button/styles/normal = SubResource("StyleBoxTexture_wbm84")
+Button/styles/normal = SubResource("StyleBoxTexture_h3wv7")
 Button/styles/pressed = SubResource("StyleBoxTexture_sheee")
 Control/colors/font_color = Color(0, 0, 0, 1)
 GreenButton/base_type = &"Button"
