@@ -1,32 +1,140 @@
 [gd_scene format=3 uid="uid://cd5ye3f0jb7n4"]
 
-[ext_resource type="PackedScene" uid="uid://dyse4lodi3ixg" path="res://pilot/pilot.tscn" id="1_pq8q7"]
+[ext_resource type="Theme" uid="uid://y2q0yys4cvl5" path="res://ui-base/kenney_theme.tres" id="1_pq8q7"]
 
-[node name="root" type="Node" unique_id=1883079339]
-
-[node name="Control" type="Control" parent="." unique_id=1942426052]
+[node name="root" type="Control" unique_id=2073068365]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_pq8q7")
 
-[node name="CenterContainer" type="CenterContainer" parent="Control" unique_id=1065829510]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1643699563]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 2
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="Control/CenterContainer" unique_id=1891588710]
+[node name="Control" type="Control" parent="VBoxContainer" unique_id=1266626732]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control2" type="CenterContainer" parent="VBoxContainer" unique_id=503197356]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/Control2" unique_id=1476421150]
 layout_mode = 2
 
-[node name="SubViewport" type="SubViewport" parent="Control/CenterContainer/SubViewportContainer" unique_id=1658003732]
-handle_input_locally = false
-render_target_update_mode = 4
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer" unique_id=1887673608]
+layout_mode = 2
 
-[node name="Node2D" type="Node2D" parent="Control/CenterContainer/SubViewportContainer/SubViewport" unique_id=2053393757]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer" unique_id=1664416287]
+layout_mode = 2
 
-[node name="Pilot" parent="Control/CenterContainer/SubViewportContainer/SubViewport/Node2D" unique_id=817408437 instance=ExtResource("1_pq8q7")]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer" unique_id=137559919]
+layout_mode = 2
+theme_type_variation = &"Tier2PanelContainer"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer" unique_id=773876352]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=84663162]
+layout_mode = 2
+alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1392303660]
+layout_mode = 2
+text = "Heading"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=2118256416]
+layout_mode = 2
+alignment = 1
+
+[node name="HScrollBar" type="HScrollBar" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=1100768831]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1524501409]
+layout_mode = 2
+text = "90°"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=5092275]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=688065536]
+layout_mode = 2
+text = "Thrust"
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=1370951425]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer2" unique_id=1570557742]
+layout_mode = 2
+text = "100%"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1707801723]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=1536536277]
+layout_mode = 2
+text = "Duration"
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=651648647]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/HBoxContainer3" unique_id=615703650]
+layout_mode = 2
+text = "15°"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1134270397]
+layout_mode = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1177902682]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/CenterContainer" unique_id=201067581]
+layout_mode = 2
+text = "Add Point"
+
+[node name="CenterContainer2" type="CenterContainer" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2" unique_id=1592425494]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="VBoxContainer/Control2/PanelContainer/HBoxContainer/PanelContainer/VBoxContainer2/CenterContainer2" unique_id=344467536]
+layout_mode = 2
+theme_type_variation = &"GreenButton"
+text = "Queue Path"
+
+[node name="Control3" type="Control" parent="VBoxContainer" unique_id=522598879]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer" unique_id=550906747]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/CenterContainer" unique_id=1332004595]
+layout_mode = 2
+
+[node name="TabBar" type="TabBar" parent="VBoxContainer/CenterContainer/PanelContainer" unique_id=521768764]
+layout_mode = 2
+current_tab = 1
+tab_alignment = 1
+clip_tabs = false
+close_with_middle_mouse = false
+scrolling_enabled = false
+switch_on_drag_hover = false
+scroll_to_selected = false
+tab_count = 2
+tab_0/title = "Window (1)"
+tab_1/title = "Navigation (2)"
